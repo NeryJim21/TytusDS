@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/TytusDS/static/css/main.4b1cad0a.chunk.css",
+    "main.js": "/TytusDS/static/js/main.0d3b4a56.chunk.js",
+    "main.js.map": "/TytusDS/static/js/main.0d3b4a56.chunk.js.map",
+    "runtime-main.js": "/TytusDS/static/js/runtime-main.6dfa5171.js",
+    "runtime-main.js.map": "/TytusDS/static/js/runtime-main.6dfa5171.js.map",
+    "static/css/2.4f8976c6.chunk.css": "/TytusDS/static/css/2.4f8976c6.chunk.css",
+    "static/js/2.492d679c.chunk.js": "/TytusDS/static/js/2.492d679c.chunk.js",
+    "static/js/2.492d679c.chunk.js.map": "/TytusDS/static/js/2.492d679c.chunk.js.map",
+    "index.html": "/TytusDS/index.html",
+    "static/css/2.4f8976c6.chunk.css.map": "/TytusDS/static/css/2.4f8976c6.chunk.css.map",
+    "static/css/main.4b1cad0a.chunk.css.map": "/TytusDS/static/css/main.4b1cad0a.chunk.css.map",
+    "static/js/2.492d679c.chunk.js.LICENSE.txt": "/TytusDS/static/js/2.492d679c.chunk.js.LICENSE.txt",
+    "static/media/Arborea.99f1f4e3.png": "/TytusDS/static/media/Arborea.99f1f4e3.png",
+    "static/media/Lineal.9fd2a4a7.png": "/TytusDS/static/media/Lineal.9fd2a4a7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6dfa5171.js",
+    "static/css/2.4f8976c6.chunk.css",
+    "static/js/2.492d679c.chunk.js",
+    "static/css/main.4b1cad0a.chunk.css",
+    "static/js/main.0d3b4a56.chunk.js"
+  ]
+}
