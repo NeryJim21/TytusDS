@@ -2,16 +2,16 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 
 import Button from '../components/Button'
-import ItemHome from '../items/ItemHome'
+import ItemLineal from '../items/ItemLineal'
 
 import '../Global.css'
 
-class Home extends React.Component{
+class Lineal extends React.Component{
     render() {
         return (
             <div className="container">
                 <div className="row Center ">
-                    {ItemHome.map((item, index) =>{
+                    {ItemLineal.map((item, index) =>{
                         return (
                             <div className="col Center2">
                                 <Link className="Link_text" to={item.path}>
@@ -30,4 +30,4 @@ class Home extends React.Component{
     }
 }
 
-export default Home;
+export default Lineal;

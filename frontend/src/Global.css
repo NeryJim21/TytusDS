@@ -5,9 +5,18 @@
 
 .Center{
   justify-content: center;
-  display: flex;
-  flex-direction: row;
+  position: relative;
+}
+
+.Center2{
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
+  padding: 2rem;
+  
+}
+
+.HW{
+  height: 380px;
+  width: 380px;
 }

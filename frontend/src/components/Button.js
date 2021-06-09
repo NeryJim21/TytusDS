@@ -5,7 +5,7 @@ import './styles/Button.css';
 class Button extends React.Component {
   render() {
     return (
-      <div className="Button">
+      <div className={this.props.clas}>
         <div className="Button_header"></div>
 
         <div className="Button_section-logo">
