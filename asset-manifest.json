@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/TytusDS/static/css/main.b194be3e.chunk.css",
-    "main.js": "/TytusDS/static/js/main.473039cd.chunk.js",
-    "main.js.map": "/TytusDS/static/js/main.473039cd.chunk.js.map",
+    "main.js": "/TytusDS/static/js/main.2306a4e2.chunk.js",
+    "main.js.map": "/TytusDS/static/js/main.2306a4e2.chunk.js.map",
     "runtime-main.js": "/TytusDS/static/js/runtime-main.6dfa5171.js",
     "runtime-main.js.map": "/TytusDS/static/js/runtime-main.6dfa5171.js.map",
     "static/css/2.4f8976c6.chunk.css": "/TytusDS/static/css/2.4f8976c6.chunk.css",
-    "static/js/2.e5142b83.chunk.js": "/TytusDS/static/js/2.e5142b83.chunk.js",
-    "static/js/2.e5142b83.chunk.js.map": "/TytusDS/static/js/2.e5142b83.chunk.js.map",
+    "static/js/2.39d28df1.chunk.js": "/TytusDS/static/js/2.39d28df1.chunk.js",
+    "static/js/2.39d28df1.chunk.js.map": "/TytusDS/static/js/2.39d28df1.chunk.js.map",
     "index.html": "/TytusDS/index.html",
     "static/css/2.4f8976c6.chunk.css.map": "/TytusDS/static/css/2.4f8976c6.chunk.css.map",
     "static/css/main.b194be3e.chunk.css.map": "/TytusDS/static/css/main.b194be3e.chunk.css.map",
-    "static/js/2.e5142b83.chunk.js.LICENSE.txt": "/TytusDS/static/js/2.e5142b83.chunk.js.LICENSE.txt",
+    "static/js/2.39d28df1.chunk.js.LICENSE.txt": "/TytusDS/static/js/2.39d28df1.chunk.js.LICENSE.txt",
     "static/media/Arborea.99f1f4e3.png": "/TytusDS/static/media/Arborea.99f1f4e3.png",
     "static/media/Lineal.9fd2a4a7.png": "/TytusDS/static/media/Lineal.9fd2a4a7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6dfa5171.js",
     "static/css/2.4f8976c6.chunk.css",
-    "static/js/2.e5142b83.chunk.js",
+    "static/js/2.39d28df1.chunk.js",
     "static/css/main.b194be3e.chunk.css",
-    "static/js/main.473039cd.chunk.js"
+    "static/js/main.2306a4e2.chunk.js"
   ]
 }
