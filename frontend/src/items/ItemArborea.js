@@ -1,40 +1,38 @@
-import Arborea from '../images/Arborea.png'
+import Binario from '../images/Arboles/Binario.png'
+import B from '../images/Arboles/B.png'
+import AVL from '../images/Arboles/AVL.png'
+import Merkle from '../images/Arboles/Merkle.png'
+import Bm from '../images/Arboles/Bm.png'
 
 const ItemArborea = [
     {
-        name: "Árbol Binario de Búsqueda",
-        logo: Arborea,
-        path: "Arborea/ArbolBinariodeBusqueda",
+        name: "Árbol Binario",
+        logo: Binario,
+        path: "Arboreas/ArbolBinario",
         class: "Button_right"
     },
     {
         name: "AVL",
-        logo: Arborea,
-        path: "Arborea/AVL",
+        logo: AVL,
+        path: "Arboreas/AVL",
         class: "Button"
     },
     {
         name: "Árbol B",
-        logo: Arborea,
-        path: "Arborea/ArbolB",
+        logo: B,
+        path: "Arboreas/ArbolB",
         class: "Button_left"
     },
     {
         name: "Árbol B+",
-        logo: Arborea,
-        path: "Arborea/ArbolB+",
+        logo: Bm,
+        path: "Arboreas/ArbolB+",
         class: "Top_right"
     },
     {
-        name: "Codificación",
-        logo: Arborea,
-        path: "Arborea/Codificacion",
-        class: "Top_button"
-    },
-    {
         name: "Árbol de Merkle",
-        logo: Arborea,
-        path: "Arborea/ArboldeMerkle",
+        logo: Merkle,
+        path: "Arboreas/ArboldeMerkle",
         class: "Top_left"
     }
 ]

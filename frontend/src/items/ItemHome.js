@@ -6,37 +6,37 @@ const ItemHome = [
     {
         name: "Lineales",
         logo: Lineal,
-        path: "TytusDS/Lineales",
+        path: "Lineales",
         class: "Button_right"
     },
     {
-        name: "Ordenamiento",
+        name: "Ordenamientos",
         logo: Ordenamiento,
-        path: "TytusDS/Ordenamiento",
+        path: "Ordenamientos",
         class: "Button"
     },
     {
-        name: "Arbórea",
+        name: "Arbóreas",
         logo: Arborea,
-        path: "TytusDS/Arborea",
+        path: "Arboreas",
         class: "Button_left"
     },
     {
         name: "No Lineales",
         logo: Arborea,
-        path: "TytusDS/NoLineales",
+        path: "/algo",
         class: "Top_right"
     },
     {
         name: "Codificación",
         logo: Arborea,
-        path: "TytusDS/Codificacion",
+        path: "#",
         class: "Top_button"
     },
     {
         name: "Compuestas",
         logo: Arborea,
-        path: "TytusDS/Compuestas",
+        path: "#",
         class: "Top_left"
     }
 ]

@@ -1,46 +1,46 @@
-import Lineal from '../images/Lineal.png'
+import CircularS from '../images/Lineales/CircularS.png'
+import CircularD from '../images/Lineales/CircularD.png'
+import Cola from '../images/Lineales/Cola.png'
+import ListaD from '../images/Lineales/ListaD.png'
+import ListaS from '../images/Lineales/ListaS.png'
+import Pila from '../images/Lineales/Pila.png'
+//import ColaP from '../images/Lineales/Circular.png'
 
 const ItemLineal = [
     {
-        name: "Simplemente Enlazada",
-        logo: Lineal,
-        path: "Lineales/SimplementeEnlazada",
+        name: "Enlazada Simple",
+        logo: ListaS,
+        path: "Lineales/EnlazadaSimple",
         class: "Button_right"
     },
     {
-        name: "Doblemente Enlazada",
-        logo: Lineal,
-        path: "Lineales/DoblementeEnlazada",
+        name: "Enlazada Doble",
+        logo: ListaD,
+        path: "Lineales/EnlazadaDoble",
         class: "Button"
     },
     {
-        name: "Circular Simplemente Enlazada",
-        logo: Lineal,
-        path: "Lineales/CircularSimplementeEnlazada",
+        name: "Circular Simple",
+        logo: CircularS,
+        path: "Lineales/CircularSimple",
         class: "Button_left"
     },
     {
-        name: "Circular Doblemente Enlazada",
-        logo: Lineal,
-        path: "Lineales/CircularDoblementeEnlazada",
+        name: "Circular Doble",
+        logo: CircularD,
+        path: "Lineales/CircularDoble",
         class: "Top_right"
     },
     {
         name: "Pila",
-        logo: Lineal,
+        logo: Pila,
         path: "Lineales/Pila",
         class: "Top_button"
     },
     {
-        name: "Cola",
-        logo: Lineal,
-        path: "Lineales/Cola",
-        class: "Top_left"
-    },
-    {
-        name: "Cola de Prioridad",
-        logo: Lineal,
-        path: "Lineales/ColadePrioridad",
+        name: "Colas",
+        logo: Cola,
+        path: "Lineales/Colas",
         class: "Top_left"
     }
 ]

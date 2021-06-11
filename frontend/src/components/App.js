@@ -13,10 +13,10 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="/TytusDS" component={Home} />
+          <Route exact path="/TytusDS/" component={Home} />
           <Route exact path="/TytusDS/Lineales" component={Lineal} />
-          <Route exact path="/TytusDS/Ordenamiento" component={Ordenamiento} />
-          <Route exact path="/TytusDS/Arborea" component={Arborea} />
+          <Route exact path="/TytusDS/Ordenamientos" component={Ordenamiento} />
+          <Route exact path="/TytusDS/Arboreas" component={Arborea} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

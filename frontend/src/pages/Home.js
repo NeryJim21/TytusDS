@@ -10,8 +10,8 @@ class Home extends React.Component{
     render() {
         return (
             <div className="container">
-                <div className="row Center ">
-                    {ItemHome.map((item, index) =>{
+                <div className="row Center">
+                    {ItemHome.map((item) =>{
                         return (
                             <div className="col Center2">
                                 <Link className="Link_text" to={item.path}>

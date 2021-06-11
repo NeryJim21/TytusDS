@@ -13,7 +13,7 @@ class Footer extends React.Component{
                             <a className="Link_text" href="https://github.com/tytusdb/tytusds" target="_blank" rel="noreferrer">
                                 TytusDS
                             </a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;  
-                            Todos los Derechos Reservados&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;    
+                                Todos los Derechos Reservados&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;    
                             <a className="Link_text" href="https://github.com/tytusdb/tytusds/blob/main/LICENSE.md" target="_blank" rel="noreferrer">
                                 Terminos de Uso
                             </a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        
