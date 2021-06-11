@@ -10,7 +10,7 @@
     font-weight: 900;
     font-family: sans-serif;
     align-content: center;
-    background: linear-gradient(to bottom right, #FF9AA2 , #C7CEEA);
+    background: linear-gradient(to bottom right, #C7CEEA, #FF9AA2 );
     background-clip: 0;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

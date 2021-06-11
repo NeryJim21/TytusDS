@@ -6,7 +6,7 @@ class Nodo {
     }
 }
 
-class CircularSimple {
+class CircularDoble {
     constructor(){
         this.raiz = null
     }
@@ -19,18 +19,62 @@ class CircularSimple {
             nodo.anterior = nodo
         }
         else{
-            var aux = this.primero
+            var aux = this.raiz
             while(true){
-                if(aux.siguiente == aux.anterior){
+                if(aux.siguiente == this.raiz){
                     aux.siguiente = nodo
-                    aux.anterior = nodo
-                    nodo.siguiente = aux
-                    nodo.siguiente = aux
+                    this.raiz.anterior = nodo
+                    nodo.siguiente = this.raiz
+                    nodo.anterior = aux
+                    break
                 }
-                else{
-                    
-                }
+                aux = aux.siguiente
             }
         }
     }
+
+    eliminar(valor){
+        var nodo = this.raiz
+        var aux = null
+        while(true){
+            if(nodo.valor == valor){
+                if(nodo == this.raiz){
+                    if(this.raiz.siguiente == this.raiz){
+                        this.raiz = null
+                    }
+                    else{
+                        aux = this.raiz.anterior
+                        this.raiz = nodo.siguiente
+                        this.raiz.anterior = aux
+                    }
+                    break
+                }
+                else{
+                    aux = nodo.anterior
+                    aux.siguiente = nodo.siguiente
+                    nodo.siguiente.anterior = aux
+                    break
+                }
+            }
+            if(nodo.siguiente == this.raiz){
+                break
+            }
+
+            nodo = nodo.siguiente
+        }
+    }
+
+    actualizar(valor, nuevo){
+
+    }
+
+    buscar(valor){
+
+    }
+
+    cargar(lista){
+
+    }
 }
+
+//export default CircularDoble
