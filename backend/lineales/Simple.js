@@ -76,17 +76,20 @@ class Simple {
         var posicion = 0
         while(aux != null){
             if(aux.valor == valor){
-                //Se encotro valor
+                //Se encontro valor
                 return {estado: true, posicion: posicion}
             }
             posicion++
             aux = aux.siguiente
         }
+        //No se encontro valor
         return {estado: false}
     }
 
-    cargar(){
-
+    cargar(lista){
+        lista.map(i =>{
+            this.agregar(i.a)
+        })
     }
 
     guardar(){

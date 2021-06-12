@@ -64,8 +64,10 @@ class Pila {
         return {estado: false}
     }
 
-    cargar(){
-
+    cargar(lista){
+        lista.map(i =>{
+            this.agregar(i.a)
+        })
     }
 
     guardar(){
@@ -74,3 +76,16 @@ class Pila {
 }
 
 //export default Pila
+
+const str = '[{ "name": "Miguel", "Nota": 100 }, { "name": "Nery", "Nota": 100 }]';
+
+const obj = JSON.parse(str);
+var ar = []
+
+obj.map( item => {
+    ar.push(item.name)
+})
+
+for(var i in ar){
+    console.log(ar[i])
+}

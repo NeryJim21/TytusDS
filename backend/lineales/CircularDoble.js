@@ -73,7 +73,9 @@ class CircularDoble {
     }
 
     cargar(lista){
-
+        lista.map(i =>{
+            this.agregar(i.a)
+        })
     }
 }
 
