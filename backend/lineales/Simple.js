@@ -6,30 +6,65 @@ class Nodo {
 }
 
 class Simple {
-    constructor(){
+    constructor(ingreso, repeticion){
         this.primero = null
         this.ultimo = null
+        this.ingreso = ingreso
+        this,repeticion = repeticion
     }
 
     agregar(valor){
         const nodo = new Nodo(valor)
         if(this.primero == null){
-            //Agregar a lista vacia
             this.primero = this.ultimo = nodo
         }
         else{
-            //Agregar a lista no vacia
-            var aux = this.ultimo
-            aux.siguiente = this.ultimo = nodo
-            /*var aux = this.primero
-            while(aux != null){
-                if(aux == this.ultimo){
-                    aux.siguiente = nodo
-                    this.ultimo = nodo
-                    break
+            if(this.repeticion || !(this.buscar(valor))){
+                if(this.ingreso == "Final"){
+                    this.agregar_F(nodo)
                 }
-                aux = aux.siguiente
-            }*/
+                else if(this.ingreso == "Inicio"){
+                    this.agregar_I(nodo)
+                }
+                else if(this.ingreso == "Orden"){
+                    this.agregar_O(nodo)
+                }
+            }
+        }
+    }
+
+    agregar_F(nodo){
+        var aux = this.ultimo
+        aux.siguiente = this.ultimo = nodo
+    }
+
+    agregar_I(nodo){
+        var aux = this.primero
+        this.primero = nodo
+        nodo.siguiente = aux
+    }
+
+    agregar_O(nodo){
+        var aux = this.primero
+        var pivote = null
+        while (aux != null) {
+            if(nodo.valor <= aux.valor){
+                if(aux == this.primero){
+                    nodo.siguiente = aux
+                    this.primero = nodo
+                }
+                else{
+                    pivote.siguiente = nodo
+                    nodo.siguiente = aux
+                }
+                break
+            }
+            else if(aux == this.ultimo){
+                aux.siguiente = this.ultimo = nodo
+                break
+            }
+            pivote = aux
+            aux = aux.siguiente
         }
     }
 
@@ -73,17 +108,15 @@ class Simple {
 
     buscar(valor){
         var aux = this.primero
-        var posicion = 0
         while(aux != null){
             if(aux.valor == valor){
                 //Se encontro valor
-                return {estado: true, posicion: posicion}
+                return true
             }
-            posicion++
             aux = aux.siguiente
         }
         //No se encontro valor
-        return {estado: false}
+        return false
     }
 
     cargar(lista){
@@ -98,13 +131,3 @@ class Simple {
 }
 
 //export default Simple
-
-const list = new Simple()
-
-list.agregar(2)
-list.agregar(3)
-list.agregar(4)
-
-//list.eliminar(4)
-
-console.log(list)

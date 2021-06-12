@@ -6,25 +6,28 @@ class Nodo {
 }
 
 class Pila {
-    constructor(){
+    constructor(repeticion){
         this.primero = null
         this.ultimo = null
+        this.repeticion = repeticion
     }
 
     agregar(valor){
         const nodo = new Nodo(valor)
-        var aux = null
         if(this.primero == null){
             this.primero = this.ultimo = nodo
         }
         else{
-            aux = this.primero
-            this.primero = nodo
-            nodo.siguiente = aux
-            if(this.ultimo == null){
-                this.ultimo = nodo
+            if(this.repeticion || !(this.buscar(valor))){
+                this.agregar_P(nodo)
             }
         }
+    }
+
+    agregar_P(nodo){
+        var aux = this.primero
+        this.primero = nodo
+        nodo.siguiente = aux
     }
 
     eliminar(){
@@ -51,17 +54,15 @@ class Pila {
 
     buscar(valor){
         var aux = this.primero
-        var posicion = 0
         while(aux != null){
             if(aux.valor == valor){
                 //Se encotro valor
-                return {estado: true, posicion: posicion}
+                return true
             }
-            posicion++
             aux = aux.siguiente
         }
         //No se encontro valor
-        return {estado: false}
+        return false
     }
 
     cargar(lista){
@@ -76,16 +77,3 @@ class Pila {
 }
 
 //export default Pila
-
-const str = '[{ "name": "Miguel", "Nota": 100 }, { "name": "Nery", "Nota": 100 }]';
-
-const obj = JSON.parse(str);
-var ar = []
-
-obj.map( item => {
-    ar.push(item.name)
-})
-
-for(var i in ar){
-    console.log(ar[i])
-}
