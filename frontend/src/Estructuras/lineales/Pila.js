@@ -76,4 +76,4 @@ class Pila {
     }
 }
 
-//export default Pila
+export default Pila

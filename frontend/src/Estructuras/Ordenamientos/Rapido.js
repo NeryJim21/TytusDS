@@ -36,11 +36,4 @@ class Rapido{
     }
 }
 
-const ar = new Rapido()
-const str = '[{"a":10}, {"a":35}, {"a":4}, {"a":545}, {"a":6}, {"a":755}, {"a":80}]';
-
-const obj = JSON.parse(str);
-
-ar.cargar(obj)
-
-console.log(ar)
+export default Rapido

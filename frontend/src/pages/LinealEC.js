@@ -1,11 +1,11 @@
 import React from 'react';
 
-import EnlazadaS from '../Estructuras/Simple'
-import CirlarD from '../Estructuras/CircularDoble'
+import EnlazadaS from '../Estructuras/lineales/Simple'
+import CirlarD from '../Estructuras/lineales/CircularDoble'
 
-import '../Global.css'
+import './styles/Grafica.css'
 
-class LinealesL extends React.Component {
+class Ordenamiento extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -47,6 +47,9 @@ class LinealesL extends React.Component {
             }
             else if(id === "Eliminar"){
                 this.lista.eliminar(this.state.entrada)
+            }
+            else if(id === "Nuevo"){
+                this.lista = this.setLista(this.state.path)
             }
             else{
                 console.log(this.lista)
@@ -91,23 +94,28 @@ class LinealesL extends React.Component {
                             </form>
                         </td>
                         <td>
-                        <button className="btn Boton" id="Agregar" href="#"
+                        <button className="btn Boton" id="Agregar"
                             onClick={this.handleClick}> Agregar
                         </button> 
                         </td>
                         <td>
-                            <button className="btn btn-secondary" id="Eliminar"
+                            <button className="btn Boton" id="Eliminar"
                                 onClick={this.handleClick}> Eliminar
                             </button>
                         </td>
                         <td>
-                            <button className="btn btn-secondary" id="Buscar"
+                            <button className="btn Boton" id="Buscar"
                                 onClick={this.handleClick}> Buscar
                             </button>
                         </td>
                         <td>
-                            <button type="button" className="btn btn-secondary" id="Guardar"
+                            <button className="btn Boton" id="Guardar"
                                 onClick={this.handleClick}> Guardar
+                            </button>
+                        </td>
+                        <td>
+                            <button className="btn Boton" id="Cargar"
+                                onClick={this.handleClick}> Cargar
                             </button>
                         </td>
                     </table>
@@ -119,11 +127,11 @@ class LinealesL extends React.Component {
                     <table>
                         <td>
                             <input type="range"  min="0" max="10" step="1"  onChange={this.handleMove}
-                            defaultValue="5" width="100"/>
+                            defaultValue={this.state.velocidad} width="100"/>
                         </td>
                         <td>
-                            <select multiple="" class="form-select" id="exampleSelect2" 
-                                onChange={this.handleOption}>
+                            <select multiple="" class="form-select" 
+                                onChange={this.handleOption} >
                                 <option>Final</option>
                                 <option>Inicio</option>
                                 <option>Orden</option>
@@ -149,6 +157,4 @@ class LinealesL extends React.Component {
 
 }
 
-
-
-export default LinealesL
+export default Ordenamiento
