@@ -7,6 +7,7 @@ import Lineal from '../pages/Lineal';
 import Ordenamiento from '../pages/Ordenamiento';
 import Arborea from '../pages/Arborea';
 import NotFound from '../pages/NotFound';
+import Otras from '../pages/LinealesL';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route exact path="/TytusDS/Lineales" component={Lineal} />
           <Route exact path="/TytusDS/Ordenamientos" component={Ordenamiento} />
           <Route exact path="/TytusDS/Arboreas" component={Arborea} />
+          <Route exact path="/TytusDS/Arboreas/EnlazadaSimple" component={Otras} />
+          <Route exact path="/TytusDS/Arboreas/CircularDoble" component={Otras} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
