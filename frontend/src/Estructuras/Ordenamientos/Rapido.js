@@ -24,9 +24,9 @@ class Rapido{
         for (var j = min; j <= max- 1; j++){
             if (this.areglo[j] < aux){
                 i++;
-                var pivote = this.areglo[i]
+                var temp = this.areglo[i]
                 this.areglo[i] = this.areglo[j]
-                this.areglo[j] = pivote
+                this.areglo[j] = temp
             }
         }
         var pivote = this.areglo[i + 1]

@@ -14,13 +14,9 @@ class Simple {
     }
 
     agregar(valor){
-        console.log(valor)
         const nodo = new Nodo(valor)
         if(this.primero === null){
-            console.log(this.primero)
             this.primero = this.ultimo = nodo
-
-            console.log(this.primero)
         }
         else{
             if(this.repeticion || !(this.buscar(valor))){
@@ -33,6 +29,9 @@ class Simple {
                 else if(this.ingreso === "Orden"){
                     this.agregar_O(nodo)
                 }
+            }
+            else{
+                alert("No se puede ingresar el valor")
             }
         }
     }

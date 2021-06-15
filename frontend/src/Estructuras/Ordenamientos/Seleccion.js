@@ -10,7 +10,7 @@ class Seleccion{
     }
 
     ordenar(){
-        var min, aux;console.log(i)
+        var min, aux
         for(var i = 0; i < this.arreglo.length; i++){
             min = i
             for(var j = i+1; j < this.arreglo.length; j++){

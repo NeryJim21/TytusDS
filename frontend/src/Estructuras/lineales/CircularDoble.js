@@ -34,6 +34,9 @@ class CircularDoble {
                     this.agregar_O(nodo)
                 }
             }
+            else{
+                alert("No se puede ingresar el valor")
+            }
         }
     }
 
@@ -67,6 +70,11 @@ class CircularDoble {
                 }
                 break
             }
+            else if(aux === this.raiz.anterior){
+                this.raiz.anterior = aux.siguiente = nodo
+                nodo.siguiente = this.raiz
+                nodo.anterior = aux
+            }
             aux = aux.siguiente
         }while(aux !== this.raiz)
     }
@@ -83,7 +91,7 @@ class CircularDoble {
                     else{
                         aux = this.raiz.anterior
                         this.raiz = nodo.siguiente
-                        this.raiz.anterior = aux
+                        nodo.anterior = aux
                     }
                 }
                 else{

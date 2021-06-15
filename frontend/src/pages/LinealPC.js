@@ -43,6 +43,14 @@ class LinealPC extends React.Component {
             else if(id === "Nuevo"){
                 this.lista = this.setLista(this.state.path)
             }
+            else if(id === "Buscar"){
+                var aux = this.lista.buscar(this.state.entrada)
+                if(aux){
+                    alert("Se encontro el valor")
+                }else{
+                    alert("No se encontro el valor")
+                }
+            }
             else{
                 console.log(this.lista)
             }

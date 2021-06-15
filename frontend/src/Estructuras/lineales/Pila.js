@@ -14,12 +14,15 @@ class Pila {
 
     agregar(valor){
         const nodo = new Nodo(valor)
-        if(this.primero == null){
+        if(this.primero === null){
             this.primero = this.ultimo = nodo
         }
         else{
             if(this.repeticion || !(this.buscar(valor))){
                 this.agregar_P(nodo)
+            }
+            else{
+                alert("No se puede ingresar el valor")
             }
         }
     }
@@ -33,7 +36,7 @@ class Pila {
     eliminar(){
         if(this.ultimo != null){
             var nodo = this.primero.siguiente
-            if(this.primero == this.ultimo){
+            if(this.primero === this.ultimo){
                 this.primero = this.ultimo = null
             }
             else{
@@ -45,7 +48,7 @@ class Pila {
     actualizar(valor, nuevo){
         var nodo = this.primero
         while(nodo != null){
-            if(nodo.valor == valor){
+            if(nodo.valor === valor){
                 nodo.valor = nuevo
             }
             nodo = nodo.siguiente
@@ -55,7 +58,7 @@ class Pila {
     buscar(valor){
         var aux = this.primero
         while(aux != null){
-            if(aux.valor == valor){
+            if(aux.valor === valor){
                 //Se encotro valor
                 return true
             }

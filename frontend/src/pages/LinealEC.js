@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import ReactFileReader from 'react-file-reader'
 
 import EnlazadaS from '../Estructuras/lineales/Simple'
 import CirlarD from '../Estructuras/lineales/CircularDoble'
@@ -48,6 +49,15 @@ class Ordenamiento extends React.Component {
             else if(id === "Eliminar"){
                 this.lista.eliminar(this.state.entrada)
             }
+            else if(id === "Buscar"){
+                var aux = this.lista.buscar(this.state.entrada)
+                if(aux){
+                    alert("Se encontro el valor")
+                }
+                else{
+                    alert("No se encontro el valor")
+                }
+            }
             else if(id === "Nuevo"){
                 this.lista = this.setLista(this.state.path)
             }
@@ -60,12 +70,20 @@ class Ordenamiento extends React.Component {
             })
         }
     }
-
+    
     handleMove = e => {
         console.log(e.target.value)
         this.setState({
             velocidad: e.target.value
         })
+    }
+
+    handleFiles = f => {
+        var txt = new FileReader();
+        txt.onload = function(e) {
+        console.log(txt.result)
+        }
+        txt.readAsText(f[0]);
     }
 
     setLista = path => {
@@ -114,9 +132,11 @@ class Ordenamiento extends React.Component {
                             </button>
                         </td>
                         <td>
-                            <button className="btn Boton" id="Cargar"
-                                onClick={this.handleClick}> Cargar
-                            </button>
+                            <ReactFileReader handleFiles={this.handleFiles} fileTypes={'.txt'}>
+                                <button className="btn Boton" id="Cargar"
+                                    > Cargar
+                                </button>
+                            </ReactFileReader>
                         </td>
                     </table>
                 </nav>
