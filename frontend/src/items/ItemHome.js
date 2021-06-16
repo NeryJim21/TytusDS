@@ -18,7 +18,7 @@ const ItemHome = [
     {
         name: "Arbóreas",
         logo: Arborea,
-        path: "Arboreas",
+        path: "/Arboreas",
         class: "Button_left"
     },
     {
