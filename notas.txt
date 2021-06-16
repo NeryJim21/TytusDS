@@ -30,3 +30,6 @@ bie.valores.push(3)
 
 const userStr = JSON.stringify(bie, null, '   ');
 console.log(userStr)
+
+
+"homepage": "https://tytusdb.github.io/tytusds/20211SVAC/GXX/frontend/build"
