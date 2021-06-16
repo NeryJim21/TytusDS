@@ -6,7 +6,7 @@ const ItemHome = [
     {
         name: "Lineales",
         logo: Lineal,
-        path: "Lineales",
+        path: "/Lineales",
         class: "Button_right"
     },
     {

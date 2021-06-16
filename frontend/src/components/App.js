@@ -15,13 +15,13 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="." component={Home} />
-          <Route exact path="./Lineales" component={Lineal} />
+          <Route path="/" component={Home} />
+          <Route path="/Lineales" component={Lineal} />
           <Route exact path="./Ordenamientos" component={Ordenamiento} />
-          <Route exact path=".Arboreas" component={Arborea} />
-          <Route exact path="/TytusDS/Lineales/EnlazadaSimple" component={LinealEC} />
-          <Route exact path="/TytusDS/Lineales/CircularDoble" component={LinealEC} />
-          <Route exact path="/TytusDS/Lineales/Pila" component={LinealPC} />
+          <Route exact path="./Arboreas" component={Arborea} />
+          <Route exact path="../EnlazadaSimple" component={LinealEC} />
+          <Route exact path="../CircularDoble" component={LinealEC} />
+          <Route exact path="../Pila" component={LinealPC} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

@@ -8,7 +8,7 @@ class Navbar extends React.Component {
     return (
       <div className="Navbar">
         <div className="container-fluid">
-          <Link className="Navbar_text" to="/TytusDS/">
+          <Link className="Navbar_text" to="/">
             <span className="font-weight-light">TytusDS</span>
           </Link>
         </div>
