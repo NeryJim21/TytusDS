@@ -19,10 +19,10 @@ function  App(){
       </>
       <Switch>
             <Route exact path="/TytusDS/frontend/build/" component={Home} />
-            <Route exact path="/TytusDS/frontend/build//Lineales" component={Lineal} />
-            <Route path="/Ordenamientos" component={Ordenamiento} />
+            <Route exact path="/TytusDS/frontend/build/Lineales" component={Lineal} />
+            <Route exact path="/TytusDS/frontend/build/Ordenamientos" component={Ordenamiento} />
             <Route path="/Arboreas" component={Arborea} />
-            <Route path="./EnlazadaSimple" component={LinealEC} />
+            <Route path="/EnlazadaSimple" component={LinealEC} />
             <Route path="/CircularDoble" component={LinealEC} />
             <Route path="/Pila" component={LinealPC} />
             <Route component={NotFound} />
