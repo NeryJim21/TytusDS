@@ -12,31 +12,31 @@ const ItemHome = [
     {
         name: "Ordenamientos",
         logo: Ordenamiento,
-        path: "/Ordenamientos",
+        path: "Ordenamientos",
         class: "Button"
     },
     {
         name: "Arbóreas",
         logo: Arborea,
-        path: "/Arboreas",
+        path: "Arboreas",
         class: "Button_left"
     },
     {
         name: "No Lineales",
         logo: Arborea,
-        path: "/NoLineales",
+        path: "NoLineales",
         class: "Top_right"
     },
     {
         name: "Codificación",
         logo: Arborea,
-        path: "/Codificacion",
+        path: "Codificacion",
         class: "Top_button"
     },
     {
         name: "Compuestas",
         logo: Arborea,
-        path: "/Compuestas",
+        path: "Compuestas",
         class: "Top_left"
     }
 ]
