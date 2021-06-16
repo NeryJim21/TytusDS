@@ -18,8 +18,8 @@ function  App(){
         <Navbar/>
       </>
       <Switch>
-            <Route path={"/"} excat component={Home} />
-            <Route path={"/Lineales"} exact component={Lineal} />
+            <Route exact path="/TytusDS/frontend/build/" component={Home} />
+            <Route exact path="/TytusDS/frontend/build//Lineales" component={Lineal} />
             <Route path="/Ordenamientos" component={Ordenamiento} />
             <Route path="/Arboreas" component={Arborea} />
             <Route path="./EnlazadaSimple" component={LinealEC} />
