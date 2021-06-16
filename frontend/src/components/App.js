@@ -9,26 +9,27 @@ import Arborea from '../pages/Arborea';
 import NotFound from '../pages/NotFound';
 import LinealEC from '../pages/LinealEC';
 import LinealPC from '../pages/LinealPC';
+import Navbar from './NavBar';
 
-class App extends React.Component{
-  render(){
+function  App(){
     return (
-      <BrowserRouter basename="/">
-        <Layout>
-          <Switch>
-            <Route path="/" component={Home} />
-            <Route path="Lineales" component={Lineal} />
-            <Route exact path="./Ordenamientos" component={Ordenamiento} />
-            <Route exact path="/Arboreas" component={Arborea} />
-            <Route exact path="/EnlazadaSimple" component={LinealEC} />
-            <Route exact path="/CircularDoble" component={LinealEC} />
-            <Route exact path="/Pila" component={LinealPC} />
+      <BrowserRouter>
+      <>
+        <Navbar/>
+      </>
+      <Switch>
+            <Route path={"/"} excat component={Home} />
+            <Route path={"/Lineales"} exact component={Lineal} />
+            <Route path="/Ordenamientos" component={Ordenamiento} />
+            <Route path="/Arboreas" component={Arborea} />
+            <Route path="./EnlazadaSimple" component={LinealEC} />
+            <Route path="/CircularDoble" component={LinealEC} />
+            <Route path="/Pila" component={LinealPC} />
             <Route component={NotFound} />
-          </Switch>
-        </Layout>
+            </Switch>
       </BrowserRouter>
     )
-  }
+  
 }
 
 export default App;

@@ -6,13 +6,13 @@ const ItemHome = [
     {
         name: "Lineales",
         logo: Lineal,
-        path: "/Lineales",
+        path: "Lineales",
         class: "Button_right"
     },
     {
         name: "Ordenamientos",
         logo: Ordenamiento,
-        path: "Ordenamientos",
+        path: "/Ordenamientos",
         class: "Button"
     },
     {
@@ -24,19 +24,19 @@ const ItemHome = [
     {
         name: "No Lineales",
         logo: Arborea,
-        path: "/algo",
+        path: "/NoLineales",
         class: "Top_right"
     },
     {
         name: "Codificación",
         logo: Arborea,
-        path: "#",
+        path: "/Codificacion",
         class: "Top_button"
     },
     {
         name: "Compuestas",
         logo: Arborea,
-        path: "#",
+        path: "/Compuestas",
         class: "Top_left"
     }
 ]

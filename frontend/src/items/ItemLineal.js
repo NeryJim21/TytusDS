@@ -10,7 +10,7 @@ const ItemLineal = [
     {
         name: "Enlazada Simple",
         logo: ListaS,
-        path: "Lineales/EnlazadaSimple",
+        path: "/EnlazadaSimple",
         class: "Button_right"
     },
     {

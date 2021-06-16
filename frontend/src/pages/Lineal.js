@@ -8,6 +8,7 @@ import '../Global.css'
 
 class Lineal extends React.Component{
     render() {
+        (console.log(this.props.location.pathname, "lineal"))
         return (
             <div className="container">
                 <div className="row Center ">
